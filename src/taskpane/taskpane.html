@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzhalter-Add-In</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Platzhalter-Manager</h1>
+
+        <div class="input-group">
+            <label for="placeholderName">Platzhaltername:</label>
+            <input type="text" id="placeholderName" placeholder="Platzhaltername eingeben">
+            <button id="insertPlaceholder">Einfügen</button>
+        </div>
+
+        <div class="input-group">
+            <label for="placeholderDropdown">Platzhalter auswählen:</label>
+            <select id="placeholderDropdown"></select>
+        </div>
+
+        <div class="input-group">
+            <label for="placeholderContent">Inhalt:</label>
+            <textarea id="placeholderContent" rows="4" placeholder="Neuen Inhalt eingeben"></textarea>
+            <button id="updatePlaceholder">Aktualisieren</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="taskpane.js"></script>
+</body>
+</html>
